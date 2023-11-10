@@ -5,6 +5,8 @@ import { message, Select, Steps } from "antd";
 
 import useToggle from "../../hooks/useToggle";
 import { ConnectWalletIcon, LoginBgcIcon, LoginCenterIcon } from "../../icons";
+import { ReactComponent as ZuZaLuLogo } from '../../assets/zuzaluLogo.svg'
+
 
 import "./index.css";
 
@@ -134,7 +136,10 @@ const Login: React.FC<IProps> = (props) => {
             : "connectBtnBox"
         }
       >
-        <LoginCenterIcon />
+        <div className='center-center-logo'>
+          <ZuZaLuLogo />
+        </div>
+
         <div className="connectBtnBoxTitle">Welcome to Web3MQ</div>
         <div className="connectBtnBoxText">
           Let's get started with your decentralized trip now!

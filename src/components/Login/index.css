@@ -59,6 +59,16 @@
     height: 44px;
     border-radius: 8px;
 }
+.center-center-logo {
+    width: 64px;
+    height: 64px;
+    margin: auto;
+}
+
+.center-center-logo svg {
+    width: 64px;
+    height: 64px;
+}
 
 
 

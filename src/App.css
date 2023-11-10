@@ -3,3 +3,18 @@
 body, html {
   overflow: auto !important;
 }
+
+
+.zuzaluLogoBox {
+  width: 48px;
+  height: 48px;
+
+
+}
+
+.zuzaluLogoBox svg {
+  width: 48px;
+  height: 48px;
+
+
+}

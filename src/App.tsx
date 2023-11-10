@@ -11,6 +11,7 @@ import Login from "./components/Login";
 import Main from './components/Main';
 
 import useLogin from './hooks/useLogin';
+import { ReactComponent as ZuZaLuLogo } from './assets/zuzaluLogo.svg'
 
 import './App.css';
 
@@ -22,7 +23,7 @@ const App: React.FC = () => {
 
   useEffect(() => {
     init();
-    document.getElementsByTagName('body')[0].setAttribute('data-theme', 'light');
+    document.getElementsByTagName('body')[0].setAttribute('data-theme', 'zuzalu');
     window.addEventListener('resize', () => {
       setAppType(
         window.innerWidth <= 600 ? AppTypeEnum['h5'] : AppTypeEnum['pc']
@@ -56,7 +57,7 @@ const App: React.FC = () => {
   return (
       <Chat client={client} appType={appType} logout={logout}>
         <ConnectMessage />
-        <DashBoard />
+        <DashBoard PCHomeLogo={<div className='zuzaluLogoBox'><ZuZaLuLogo /></div>} />
         <Main />
         {/* <Channel>
         <Window>
